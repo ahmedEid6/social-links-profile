@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-family: "Inter", sans-serif;
+    /* font-size: 62.5%; */
+    background-color: #fff;
+  }
+
+  body {
+    width: 1440px;
+    max-width: 100%;
+    height: 960px;
+    max-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  ul li {
+    @apply bg-grey-700 rounded-md mb-4;
+  }
+
+  ul li a {
+    @apply w-full h-full block py-3 font-bold text-sm rounded-md hover:bg-green hover:text-black;
+  }
+}
